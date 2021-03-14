@@ -12280,7 +12280,13 @@ a {
   text-align: center;
   position: relative; }
   .header-element h6 {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #feb960;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: center; }
   .header-element:after {
     content: '';
     position: absolute;
@@ -12294,7 +12300,7 @@ a {
 
 .section-projects {
   background-color: #181818;
-  padding: 100px 0; }
+  padding: 120px 0; }
   .section-projects .carousel-item {
     text-align: center;
     position: relative; }
@@ -12325,7 +12331,8 @@ a {
       line-height: 40px;
       color: #fcb960;
       font-weight: 600;
-      font-family: "Open Sans"; }
+      font-family: "Open Sans";
+      text-transform: uppercase; }
   .section-projects .action-elements {
     text-align: left; }
     .section-projects .action-elements p {

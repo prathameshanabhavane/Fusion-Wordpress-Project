@@ -4,6 +4,12 @@
     position: relative;
     h6 {
         padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 40px;
+        color: #feb960;
+        font-weight: 600;
+        font-family: "Open Sans";
+        text-align: center;
     }
     &:after {
         content: '';
