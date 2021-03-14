@@ -49,6 +49,92 @@
                 </div>
             </div>
         </section>
+        <section class="section-testimonials">
+            <div class="container">
+                <div class="row header-element">
+                    <div class="col-12 col-md-8 mx-auto">
+                        <h6 class="text-uppercase">
+                            Testimonials
+                        </h6>
+                        <h2>
+                            <?php echo get_field('header_text'); ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-team">
+            <div class="container">
+                <div class="row header-element">
+                    <div class="col-12">
+                        <h6 class="text-uppercase">
+                            Our Team
+                        </h6>
+                        <h2>
+                            <?php echo get_field('team_header_content'); ?>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <?php
+
+                        $args = array(
+                            'post_type' => 'team',
+                            'post_status' => 'publish',
+                            'posts_per_page' => -1,
+                        );
+
+                        $query = new WP_Query( $args );
+
+                        // echo '<pre>';
+                        // print_r($query);
+                        // echo '</pre>';
+
+                        if ( $query->have_posts() ) :
+                            while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                            <div class="col-12 col-md-3 team-grid">
+                                <div class="thumbnail-element">
+                                    <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
+                                </div>
+                                <h2>
+                                    <?php the_title(); ?>
+                                </h2>
+                                <h6>
+                                    <?php echo get_field('designation'); ?>
+                                </h6>
+                                <div class="hover-team-element">
+                                    <div class="name-element">
+                                        <div class="thumbnail-main">
+                                            <div class="thumbnail-element">
+                                                <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h6>
+                                                <?php echo get_field('designation'); ?>
+                                            </h6>
+                                            <h2>
+                                                <?php the_title(); ?>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="content-element">
+                                        <p>
+                                            <?php the_excerpt(); ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <?php
+                            endwhile;
+                        endif;
+                        wp_reset_postdata();
+                    ?>
+                </div>
+            </div>
+        </section>
         <section class="section-contact">
             <div class="container">
                 <div class="row header-element">
