@@ -2,10 +2,37 @@
 <?php get_header(); ?>
 
     <div class="home-page">
+        <section class="section-banner">
+            <div class="container position-relative banner-container">
+                <div class="col-12 col-md-12 col-lg-9 mx-auto">
+                    <div class="banner-content">
+                        <?php
+                            the_content();
+                        ?>
+                    </div>
+                </div>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-element">
+                    F
+                </a>
+                <a class="link-btn getin-touch-btn" href="<?php the_permalink(); ?>">Get in touch
+                    <svg class="right-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792
+                                H10.667C4.771,245.333,0,250.104,0,256s4.771,10.667,10.667,10.667h464.917L333.792,408.458c-4.167,4.167-4.167,10.917,0,15.083
+                                c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z
+                                "/>
+                        </g>
+                    </g>
+                    </svg>
+                </a>
+            </div>
+        </section>
         <section class="section-services">
             <div class="container">
                 <div class="row header-element">
-                    <div class="col-12 col-md-8 mx-auto">
+                    <div class="col-12 col-lg-8 mx-auto">
                         <h6 class="text-uppercase">
                             Our Services
                         </h6>
@@ -15,7 +42,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-10 mx-auto">
+                    <div class="col-12 col-lg-10 mx-auto">
                         <div class="row">
                             <?php
                                 $categories = get_categories( array(
@@ -162,7 +189,7 @@
         <section class="section-testimonials">
             <div class="container">
                 <div class="row header-element">
-                    <div class="col-12 col-md-8 mx-auto">
+                    <div class="col-12 col-lg-8 mx-auto">
                         <h6 class="text-uppercase">
                             Testimonials
                         </h6>
@@ -172,7 +199,7 @@
                     </div>
                 </div>
                 <div class="row companies-logo-element">
-                    <div class="col-12 col-md-10 mx-auto">
+                    <div class="col-12 col-lg-10 mx-auto">
                         <?php if( have_rows('companies_logo') ): ?>
                             <ul class="logos-ul">
                             <?php while( have_rows('companies_logo') ): the_row();
@@ -190,7 +217,7 @@
                     </div>
                 </div>
                 <div class="row testimonials-element">
-                    <div class="col-12 col-md-8 mx-auto">
+                    <div class="col-12 col-md-10 col-lg-8 mx-auto">
                         <div id="carouselTestimonialsIndicators" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <?php if( have_rows('testimonials') ): ?>
@@ -266,7 +293,7 @@
                         if ( $query->have_posts() ) :
                             while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                            <div class="col-12 col-md-3 team-grid">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3 team-grid">
                                 <div class="thumbnail-element">
                                     <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
                                 </div>
@@ -321,7 +348,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-8 mx-auto">
+                    <div class="col-12 col-lg-8 mx-auto">
                         <div class="contact-element">
                             <div class="row">
                                 <div class="col-12 col-md-6">

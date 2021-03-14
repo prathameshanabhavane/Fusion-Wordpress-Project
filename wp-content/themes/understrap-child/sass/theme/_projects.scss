@@ -69,6 +69,24 @@
     }
 }
 
+.link-btn {
+    font-size: 14px;
+    line-height: 28px;
+    color: $color-2;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: right;
+    text-transform: uppercase;
+    .right-arrow {
+        height: 15px;
+        width: 15px;
+        margin-left: 5px;
+        path {
+            fill: $primary;
+        }
+    }
+}
+
 
 @media(max-width: 767px) {
     .section-projects {

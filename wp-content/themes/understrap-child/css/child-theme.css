@@ -12124,6 +12124,87 @@ a {
     .social-links li:first-child {
       padding-left: 0; }
 
+.section-banner {
+  background-color: #181818;
+  height: 100vh; }
+  .section-banner .logo-element {
+    position: absolute;
+    bottom: 15px;
+    left: 0; }
+
+.banner-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.banner-content h1 {
+  text-align: center;
+  border: 1px solid;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 55px;
+  line-height: 90px;
+  color: #ffffff;
+  font-family: "Merriweather";
+  font-weight: 400;
+  text-align: center; }
+  .banner-content h1 strong {
+    color: #fcb960;
+    font-family: "Merriweather";
+    font-weight: 400; }
+
+.banner-content p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center; }
+
+.getin-touch-btn {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Roboto";
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 15px; }
+
+.logo-element {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #fcb960;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fcb960;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 34px; }
+
+@media (max-width: 767px) {
+  .banner-content h1 {
+    padding: 20px;
+    font-size: 24px;
+    line-height: 42px; }
+  .section-banner .logo-element {
+    left: 15px; }
+  .getin-touch-btn {
+    right: 15px; } }
+
 .form-group, .wpcf7 .wpcf7-form p {
   padding-bottom: 30px; }
   .form-group label, .wpcf7 .wpcf7-form p label {
@@ -12216,6 +12297,21 @@ a {
     width: 15px;
     margin-left: 5px; }
     .section-projects .right-arrow path {
+      fill: #fcb960; }
+
+.link-btn {
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-align: right;
+  text-transform: uppercase; }
+  .link-btn .right-arrow {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px; }
+    .link-btn .right-arrow path {
       fill: #fcb960; }
 
 @media (max-width: 767px) {
