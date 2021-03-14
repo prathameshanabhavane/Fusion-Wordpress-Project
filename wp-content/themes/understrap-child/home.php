@@ -333,14 +333,14 @@
                                             <div class="thumbnail-element">
                                                 <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
                                             </div>
-                                        </div>
-                                        <div class="info">
-                                            <h6>
-                                                <?php echo get_field('designation'); ?>
-                                            </h6>
-                                            <h2>
-                                                <?php the_title(); ?>
-                                            </h2>
+                                            <div class="info">
+                                                <h6>
+                                                    <?php echo get_field('designation'); ?>
+                                                </h6>
+                                                <h2>
+                                                    <?php the_title(); ?>
+                                                </h2>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="content-element">
