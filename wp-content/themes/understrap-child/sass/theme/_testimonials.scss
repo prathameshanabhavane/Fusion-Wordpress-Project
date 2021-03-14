@@ -2,3 +2,106 @@
     background-color: $color-6;
     padding-bottom: 80px;
 }
+
+.testimonials-element {
+    h3 {
+        font-size: 14px;
+        line-height: 35px;
+        color: #feb960;
+        font-weight: 600;
+        font-family: "Open Sans";
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 13px;
+        line-height: 20px;
+        color: $color-2;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: center;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 35px;
+        color: #bbbbbb;
+        font-family: "Merriweather";
+        text-align: center;
+    }
+
+    .carousel-inner {
+        background-color: $color-5;
+        padding: 0 40px 40px;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    }
+
+    .carousel-indicators {
+        position: relative;
+        padding-top: 15px;
+        li {
+            width: 30px;
+            height: 0;
+            padding-bottom: 3px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .active {
+            background-color: $primary;
+        }
+    }
+
+    .info-bx {
+        border-top: 1px solid;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .inner-info-bx {
+        position: relative;
+        top: -15px;
+        background-color: $color-5;
+        display: inline-block;
+        padding: 0 30px;
+    }
+
+    .testimonials-image {
+        height: 80px;
+        width: 80px;
+        background: $color-2;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        img {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.companies-logo-element {
+    padding-bottom: 50px;
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            margin: 15px 30px;
+        }
+    }
+}
+
+
+@media(max-width : 767px) {
+    .companies-logo-element {
+        ul {
+            li {
+                margin: 5px 15px;
+            }
+        }
+    }
+}

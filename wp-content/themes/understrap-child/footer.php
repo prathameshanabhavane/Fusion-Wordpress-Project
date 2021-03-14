@@ -52,14 +52,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 							   <p>
 							   		<?php the_sub_field('email'); ?>
 							   </p>
-							   <ul>
+							   <ul class="social-links">
 								   <?php if( have_rows('social_links') ): ?>
 						   			    <?php while( have_rows('social_links') ): the_row();
-											$icon = get_sub_field('icon');
 						   			        ?>
 											<li>
-									   			<a href="<?php the_sub_field('link'); ?>">
-													<?php echo wp_get_attachment_image( $image, 'full' ); ?>
+									   			<a href="<?php the_sub_field('link'); ?>" target="_blank">
+													<?php
+				                                    $image = get_sub_field('icon');
+				                                    if( !empty( $image ) ): ?>
+				                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+				                                    <?php endif; ?>
 									   			</a>
 									   		</li>
 						   			    <?php endwhile; ?>

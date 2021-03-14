@@ -61,6 +61,69 @@
                         </h2>
                     </div>
                 </div>
+                <div class="row companies-logo-element">
+                    <div class="col-12 col-md-10 mx-auto">
+                        <?php if( have_rows('companies_logo') ): ?>
+                            <ul class="logos-ul">
+                            <?php while( have_rows('companies_logo') ): the_row();
+                                ?>
+                                <li>
+                                    <?php
+                                    $image = get_sub_field('logo');
+                                    if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
+                                </li>
+                            <?php endwhile; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="row testimonials-element">
+                    <div class="col-12 col-md-8 mx-auto">
+                        <div id="carouselTestimonialsIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <?php if( have_rows('testimonials') ): ?>
+                                    <?php
+                                        $i = 0;
+                                        while( have_rows('testimonials') ): the_row();
+                                        $image = get_sub_field('image');
+                                    ?>
+                                        <div class="carousel-item <?php if($i == 0): ?>active<?php endif; ?>">
+                                            <div class="testimonials-image">
+                                                <?php echo wp_get_attachment_image( $image, 'full' ); ?>
+                                            </div>
+                                            <p>
+                                                <?php the_sub_field('content'); ?>
+                                            </p>
+                                            <div class="info-bx">
+                                                <div class="inner-info-bx">
+                                                    <h3>
+                                                        <?php the_sub_field('name'); ?>
+                                                    </h3>
+                                                    <h4>
+                                                        <?php the_sub_field('designation'); ?>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php $i++; endwhile; ?>
+                                <?php endif; ?>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <?php if( have_rows('testimonials') ): ?>
+                                    <?php
+                                        $i = 0;
+                                        while( have_rows('testimonials') ): the_row();
+                                        $image = get_sub_field('image');
+                                    ?>
+                                        <li data-target="#carouselTestimonialsIndicators" data-slide-to="<?php echo $i; ?>" class="<?php if($i == 0): ?>active<?php endif; ?>"></li>
+                                    <?php $i++; endwhile; ?>
+                                <?php endif; ?>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section-team">
