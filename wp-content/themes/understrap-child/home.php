@@ -349,44 +349,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-8 mx-auto">
-                        <div class="contact-element">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">Your Name</label>
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Your Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="company">Company</label>
-                                        <input type="text" class="form-control" id="company">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="email" class="form-control" id="subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="form-group pb-0">
-                                        <label for="message">Your Message</label>
-                                        <input type="text" class="form-control" id="message">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php echo do_shortcode('[contact-form-7 id="80" title="Contact form"]'); ?>
                     </div>
                 </div>
             </div>

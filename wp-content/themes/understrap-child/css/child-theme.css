@@ -11740,7 +11740,8 @@ input[type="text"], input[type="email"] {
 
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #181818; }
 
 .text-black {
   color: #000000 !important; }
@@ -12163,7 +12164,8 @@ a {
   color: #ffffff;
   font-weight: 400;
   font-family: "Open Sans";
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .getin-touch-btn {
   font-size: 14px;
@@ -12206,7 +12208,7 @@ a {
     right: 15px; } }
 
 .form-group, .wpcf7 .wpcf7-form p {
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
   .form-group label, .wpcf7 .wpcf7-form p label {
     font-size: 14px;
     line-height: 24px;
@@ -12215,19 +12217,57 @@ a {
     font-family: "Open Sans";
     text-transform: uppercase;
     padding-bottom: 5px; }
-  .form-group input, .wpcf7 .wpcf7-form p input {
-    background-color: #181818;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    font-size: 14px;
-    line-height: 24px;
+  .form-group input, .wpcf7 .wpcf7-form p input,
+  .form-group textarea,
+  .wpcf7 .wpcf7-form p textarea {
+    background-color: #181818 !important;
+    border: none !important;
+    border-bottom: 1px solid #ffffff !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
     color: #ffffff !important;
-    font-weight: 400;
-    font-family: "Open Sans"; }
-    .form-group input:focus, .wpcf7 .wpcf7-form p input:focus {
+    font-weight: 400 !important;
+    font-family: "Open Sans" !important;
+    border-radius: 0 !important; }
+    .form-group input:focus, .wpcf7 .wpcf7-form p input:focus,
+    .form-group textarea:focus,
+    .wpcf7 .wpcf7-form p textarea:focus {
       background-color: #181818;
       border: none;
       border-bottom: 1px solid #ffffff; }
+  
+  .form-group textarea,
+  .wpcf7 .wpcf7-form p textarea {
+    height: 50px; }
+
+.wpcf7 {
+  max-width: 100% !important; }
+
+.wpcf7-form p {
+  margin: 0 !important;
+  line-height: 0; }
+
+.wpcf7-response-output {
+  font-family: "Open Sans"; }
+
+.wpcf7-mail-sent-ng {
+  color: #ff0000;
+  padding: 15px !important;
+  font-family: "Open Sans"; }
+
+.wpcf7-submit {
+  font-size: 17px !important;
+  line-height: 27px !important;
+  font-weight: 600 !important;
+  font-family: "Open Sans";
+  height: 50px !important;
+  border-radius: 0 !important; }
+
+.wpcf7-not-valid-tip {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 5px; }
 
 .header-element {
   padding: 110px 0 70px;
@@ -12579,6 +12619,10 @@ a {
 @media (max-width: 767px) {
   .section-contact .contact-element {
     padding: 30px; } }
+
+.error-page {
+  background-color: #181818;
+  padding: 100px 0; }
 
 /*
 * Use existing Bootstrap 4 classes and
