@@ -115,10 +115,6 @@
 
                                 $query = new WP_Query( $args );
 
-                                // echo '<pre>';
-                                // print_r($query);
-                                // echo '</pre>';
-
                                 if ( $query->have_posts() ) :
                                     $i = 0;
                                     while ( $query->have_posts() ) : $query->the_post();
@@ -128,9 +124,6 @@
                                                 <h3>
                                                     <?php
                                                         $categories = get_the_category();
-                                                        // echo '<pre>';
-                                                        // print_r($categories);
-                                                        // echo '</pre>';
                                                         $cat_name = $categories[0]->cat_name;
                                                         echo $cat_name;
                                                     ?>
@@ -309,10 +302,6 @@
                         );
 
                         $query = new WP_Query( $args );
-
-                        // echo '<pre>';
-                        // print_r($query);
-                        // echo '</pre>';
 
                         if ( $query->have_posts() ) :
                             while ( $query->have_posts() ) : $query->the_post(); ?>
