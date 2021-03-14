@@ -12540,7 +12540,8 @@ a {
     .team-grid .hover-team-element .content-element {
       padding-left: 15px;
       padding-right: 15px;
-      position: relative; }
+      position: relative;
+      padding: 15px; }
   .team-grid:hover .hover-team-element {
     visibility: visible;
     opacity: 1; }
