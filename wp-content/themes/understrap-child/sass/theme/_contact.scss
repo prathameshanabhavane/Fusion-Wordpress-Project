@@ -1,0 +1,16 @@
+.section-contact {
+    background-color: $color-4;
+    .contact-element {
+        background-color: $color-5;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 767px) {
+    .section-contact {
+        .contact-element {
+            padding: 30px;
+        }
+    }
+}

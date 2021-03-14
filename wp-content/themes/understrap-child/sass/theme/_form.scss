@@ -1,0 +1,28 @@
+.form-group {
+    padding-bottom: 30px;
+    label {
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-2;
+            font-weight: 400;
+            font-family: "Open Sans";
+            text-transform: uppercase;
+            padding-bottom: 5px;
+    }
+
+    input {
+        background-color: $color-5;
+        border: none;
+        border-bottom: 1px solid $color-2;
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-2 !important;
+        font-weight: 400;
+        font-family: "Open Sans";
+        &:focus {
+            background-color: $color-5;
+            border: none;
+            border-bottom: 1px solid $color-2;
+        }
+    }
+}
