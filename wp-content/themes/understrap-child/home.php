@@ -49,6 +49,116 @@
                 </div>
             </div>
         </section>
+        <section class="section-projects">
+            <div class="container">
+                <div class="col-12 col-lg-12 col-xl-10 mx-auto">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <?php
+
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => -1,
+                                );
+
+                                $query = new WP_Query( $args );
+
+                                // echo '<pre>';
+                                // print_r($query);
+                                // echo '</pre>';
+
+                                if ( $query->have_posts() ) :
+                                    $i = 0;
+                                    while ( $query->have_posts() ) : $query->the_post();
+                            ?>
+                                        <div class="carousel-item <?php if($i == 0): ?>active<?php endif; ?>">
+                                            <div class="project-content">
+                                                <h3>
+                                                    <?php
+                                                        $categories = get_the_category();
+                                                        // echo '<pre>';
+                                                        // print_r($categories);
+                                                        // echo '</pre>';
+                                                        $cat_name = $categories[0]->cat_name;
+                                                        echo $cat_name;
+                                                    ?>
+                                                </h3>
+                                                <h2>
+                                                    <?php the_title(); ?>
+                                                </h2>
+                                            </div>
+                                            <?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
+                                            <div class="action-elements">
+                                                <p>
+                                                    <a href="<?php the_permalink(); ?>">Project details
+                                                        <svg class="right-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                        <g>
+                                                        	<g>
+                                                        		<path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792
+                                                        			H10.667C4.771,245.333,0,250.104,0,256s4.771,10.667,10.667,10.667h464.917L333.792,408.458c-4.167,4.167-4.167,10.917,0,15.083
+                                                        			c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z
+                                                        			"/>
+                                                        	</g>
+                                                        </g>
+                                                        </svg>
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="#">View Slides
+                                                        <svg class="right-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                        <g>
+                                                        	<g>
+                                                        		<path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792
+                                                        			H10.667C4.771,245.333,0,250.104,0,256s4.771,10.667,10.667,10.667h464.917L333.792,408.458c-4.167,4.167-4.167,10.917,0,15.083
+                                                        			c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z
+                                                        			"/>
+                                                        	</g>
+                                                        </g>
+                                                        </svg>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                            <?php
+                                    $i++;
+                                    endwhile;
+                                endif;
+                                wp_reset_postdata();
+                            ?>
+
+                        </div>
+                        <ol class="carousel-indicators">
+                            <?php
+
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => -1,
+                                );
+
+                                $query = new WP_Query( $args );
+
+                                if ( $query->have_posts() ) :
+                                    $i = 0;
+                                    while ( $query->have_posts() ) : $query->the_post();
+                            ?>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>" class="<?php if($i == 0): ?>active<?php endif; ?>"></li>
+
+                            <?php
+                                    $i++;
+                                    endwhile;
+                                endif;
+                                wp_reset_postdata();
+                            ?>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section-testimonials">
             <div class="container">
                 <div class="row header-element">

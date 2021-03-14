@@ -12165,6 +12165,98 @@ a {
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
 
+.section-projects {
+  background-color: #181818;
+  padding: 100px 0; }
+  .section-projects .carousel-item {
+    text-align: center;
+    position: relative; }
+    .section-projects .carousel-item img {
+      width: 65%; }
+  .section-projects .carousel-indicators {
+    position: relative;
+    padding-top: 15px; }
+    .section-projects .carousel-indicators li {
+      width: 30px;
+      height: 0;
+      padding-bottom: 3px;
+      margin-right: 10px;
+      margin-left: 10px; }
+    .section-projects .carousel-indicators .active {
+      background-color: #fcb960; }
+  .section-projects .project-content {
+    text-align: left; }
+    .section-projects .project-content h2 {
+      font-size: 55px;
+      line-height: 65px;
+      color: #ffffff;
+      font-family: "Merriweather";
+      -webkit-filter: drop-shadow(0 0 5px rgba(24, 24, 24, 0.5));
+              filter: drop-shadow(0 0 5px rgba(24, 24, 24, 0.5)); }
+    .section-projects .project-content h3 {
+      font-size: 14px;
+      line-height: 40px;
+      color: #fcb960;
+      font-weight: 600;
+      font-family: "Open Sans"; }
+  .section-projects .action-elements {
+    text-align: left; }
+    .section-projects .action-elements p {
+      padding: 0; }
+    .section-projects .action-elements a {
+      font-size: 14px;
+      line-height: 28px;
+      color: #ffffff;
+      font-weight: 600;
+      font-family: "Open Sans";
+      text-align: right;
+      text-transform: uppercase; }
+  .section-projects .right-arrow {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px; }
+    .section-projects .right-arrow path {
+      fill: #fcb960; }
+
+@media (max-width: 767px) {
+  .section-projects .carousel-item img {
+    width: 100%; }
+  .section-projects .project-content {
+    padding-bottom: 15px; }
+    .section-projects .project-content h2 {
+      font-size: 34px;
+      line-height: 56px; }
+  .section-projects .action-elements {
+    padding-top: 15px; } }
+
+@media (min-width: 768px) {
+  .project-content {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    text-align: left; }
+    .project-content:before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      height: 90px;
+      width: 1px;
+      background-color: #fcb960; }
+  .action-elements {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    text-align: left; }
+    .action-elements:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 90px;
+      width: 1px;
+      background-color: #fcb960; } }
+
 .section-services {
   background-color: #202020;
   padding-bottom: 70px; }
