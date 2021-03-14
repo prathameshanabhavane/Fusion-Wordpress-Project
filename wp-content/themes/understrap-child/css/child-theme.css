@@ -12445,7 +12445,7 @@ a {
 .team-grid {
   position: relative;
   margin: 50px 0;
-  height: 260px;
+  height: 280px;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   .team-grid .thumbnail-element {
@@ -12526,14 +12526,14 @@ a {
         position: absolute;
         height: auto;
         width: 76%;
-        left: -60px;
+        left: -50px;
         bottom: 30px;
         text-align: left; }
       .team-grid .hover-team-element .info h6 {
         position: absolute;
         height: auto;
         width: 76%;
-        left: -90px;
+        left: -80px;
         bottom: 40px;
         text-align: left; }
     .team-grid .hover-team-element .content-element {
