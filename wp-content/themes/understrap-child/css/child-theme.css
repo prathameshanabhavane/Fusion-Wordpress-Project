@@ -12197,6 +12197,12 @@ a {
   font-size: 24px;
   line-height: 34px; }
 
+.down-arrow-btn {
+  text-align: center;
+  display: block;
+  position: relative;
+  bottom: -80px; }
+
 @media (max-width: 767px) {
   .banner-content h1 {
     padding: 20px;

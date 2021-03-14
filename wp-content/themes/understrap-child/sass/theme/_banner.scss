@@ -70,6 +70,13 @@
     line-height: 34px;
 }
 
+.down-arrow-btn {
+    text-align: center;
+    display: block;
+    position: relative;
+    bottom: -80px;
+}
+
 @media(max-width: 767px) {
     .banner-content {
         h1 {

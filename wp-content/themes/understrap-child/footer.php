@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						<?php endif; ?>
 					</div>
-					<div class="col-12 col-md-10">
+					<div class="col-12 col-md-10 sm-mt15">
 						<div class="row">
 							<?php if( have_rows('addresses') ): ?>
 							    <?php while( have_rows('addresses') ): the_row();
