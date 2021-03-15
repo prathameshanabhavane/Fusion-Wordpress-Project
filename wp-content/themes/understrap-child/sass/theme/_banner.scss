@@ -1,12 +1,21 @@
 .section-banner {
     background-color: $color-5;
     height: 100vh;
-
+    background-image: url('../img/main-banner.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .logo-element {
         position: absolute;
         bottom: 15px;
         left: 0;
     }
+}
+
+.banner-outter-element {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 100%;
 }
 
 .banner-container {

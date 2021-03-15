@@ -3,43 +3,45 @@
 
     <div class="home-page">
         <section class="section-banner">
-            <div class="container position-relative banner-container">
-                <div class="col-12 col-md-12 col-lg-9 mx-auto">
-                    <div class="banner-content">
-                        <?php
-                            the_content();
-                        ?>
+            <div class="banner-outter-element">
+                <div class="container position-relative banner-container">
+                    <div class="col-12 col-md-12 col-lg-9 mx-auto">
+                        <div class="banner-content">
+                            <?php
+                                the_content();
+                            ?>
+                        </div>
+                        <a class="down-arrow-btn" href="#">
+                            <svg height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            	 viewBox="0 0 490.688 490.688" style="enable-background:new 0 0 490.688 490.688;" xml:space="preserve">
+                            <path style="fill:#fcb960;" d="M472.328,120.529L245.213,347.665L18.098,120.529c-4.237-4.093-10.99-3.975-15.083,0.262
+                            	c-3.992,4.134-3.992,10.687,0,14.82l234.667,234.667c4.165,4.164,10.917,4.164,15.083,0l234.667-234.667
+                            	c4.237-4.093,4.354-10.845,0.262-15.083c-4.093-4.237-10.845-4.354-15.083-0.262c-0.089,0.086-0.176,0.173-0.262,0.262
+                            	L472.328,120.529z"/>
+                            <path style="fill:#fcb960;" d="M245.213,373.415c-2.831,0.005-5.548-1.115-7.552-3.115L2.994,135.633c-4.093-4.237-3.975-10.99,0.262-15.083
+                            	c4.134-3.992,10.687-3.992,14.82,0l227.136,227.115l227.115-227.136c4.093-4.237,10.845-4.354,15.083-0.262
+                            	c4.237,4.093,4.354,10.845,0.262,15.083c-0.086,0.089-0.173,0.176-0.262,0.262L252.744,370.279
+                            	C250.748,372.281,248.039,373.408,245.213,373.415z"/>
+                            </svg>
+                        </a>
                     </div>
-                    <a class="down-arrow-btn" href="#">
-                        <svg height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        	 viewBox="0 0 490.688 490.688" style="enable-background:new 0 0 490.688 490.688;" xml:space="preserve">
-                        <path style="fill:#fcb960;" d="M472.328,120.529L245.213,347.665L18.098,120.529c-4.237-4.093-10.99-3.975-15.083,0.262
-                        	c-3.992,4.134-3.992,10.687,0,14.82l234.667,234.667c4.165,4.164,10.917,4.164,15.083,0l234.667-234.667
-                        	c4.237-4.093,4.354-10.845,0.262-15.083c-4.093-4.237-10.845-4.354-15.083-0.262c-0.089,0.086-0.176,0.173-0.262,0.262
-                        	L472.328,120.529z"/>
-                        <path style="fill:#fcb960;" d="M245.213,373.415c-2.831,0.005-5.548-1.115-7.552-3.115L2.994,135.633c-4.093-4.237-3.975-10.99,0.262-15.083
-                        	c4.134-3.992,10.687-3.992,14.82,0l227.136,227.115l227.115-227.136c4.093-4.237,10.845-4.354,15.083-0.262
-                        	c4.237,4.093,4.354,10.845,0.262,15.083c-0.086,0.089-0.173,0.176-0.262,0.262L252.744,370.279
-                        	C250.748,372.281,248.039,373.408,245.213,373.415z"/>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-element">
+                        F
+                    </a>
+                    <a class="link-btn getin-touch-btn" href="<?php the_permalink(); ?>">Get in touch
+                        <svg class="right-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792
+                                    H10.667C4.771,245.333,0,250.104,0,256s4.771,10.667,10.667,10.667h464.917L333.792,408.458c-4.167,4.167-4.167,10.917,0,15.083
+                                    c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z
+                                    "/>
+                            </g>
+                        </g>
                         </svg>
                     </a>
                 </div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-element">
-                    F
-                </a>
-                <a class="link-btn getin-touch-btn" href="<?php the_permalink(); ?>">Get in touch
-                    <svg class="right-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792
-                                H10.667C4.771,245.333,0,250.104,0,256s4.771,10.667,10.667,10.667h464.917L333.792,408.458c-4.167,4.167-4.167,10.917,0,15.083
-                                c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z
-                                "/>
-                        </g>
-                    </g>
-                    </svg>
-                </a>
             </div>
         </section>
         <section class="section-services" id="services">

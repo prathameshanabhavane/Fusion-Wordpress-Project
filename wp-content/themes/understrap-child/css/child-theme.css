@@ -12127,11 +12127,22 @@ a {
 
 .section-banner {
   background-color: #181818;
-  height: 100vh; }
+  height: 100vh;
+  background-image: url("../img/main-banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .section-banner .logo-element {
     position: absolute;
     bottom: 15px;
     left: 0; }
+
+.banner-outter-element {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
 
 .banner-container {
   -webkit-box-align: center;
